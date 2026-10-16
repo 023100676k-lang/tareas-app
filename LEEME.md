@@ -1,29 +1,60 @@
-# ✅ App de Tareas — React + Node.js
+# ✅ App de Tareas — React + Node.js Full-Stack
 
-## Como ejecutar
+Aplicación full-stack de lista de tareas construida con React (frontend) y Node.js + Express (backend), desplegada en Vercel y Render.
 
-### 1. Backend
-    cd server
-    npm install
-    npm run dev        # corre en http://localhost:3001
+## 🌐 URLs en producción
 
-### 2. Frontend (en otra terminal)
-    cd client
-    npm install
-    npm run dev        # corre en http://localhost:5173
+- **Frontend (Vercel):** https://tareas-app-xi.vercel.app
+- **API REST (Render):** https://tareas-api-xx9h.onrender.com/api/tareas
 
-Abre http://localhost:5173 en el navegador.
+## 🛠️ Tecnologías utilizadas
 
-## Endpoints de la API
+| Capa | Tecnología |
+|---|---|
+| Frontend | React 18 + Vite |
+| Backend | Node.js + Express |
+| Comunicación | API REST (HTTP + JSON) |
+| Deploy Frontend | Vercel |
+| Deploy Backend | Render |
 
-| Metodo | Ruta               | Descripcion              |
-|--------|--------------------|--------------------------|
-| GET    | /api/tareas        | Obtener todas las tareas |
-| POST   | /api/tareas        | Crear una tarea          |
-| PUT    | /api/tareas/:id    | Completar/descompletar   |
-| DELETE | /api/tareas/:id    | Eliminar una tarea       |
+## 📁 Estructura del proyecto
 
-## Prueba rapida de la API (sin navegador)
+tareas-app/
+├── client/ # Frontend React + Vite
+│ ├── src/
+│ │ ├── App.jsx
+│ │ └── components/
+│ └── package.json
+└── server/ # Backend Node.js + Express
+├── index.js
+└── package.json
 
-    curl http://localhost:3001/api/tareas
-    curl -X POST http://localhost:3001/api/tareas -H "Content-Type: application/json" -d '{"titulo":"Mi tarea"}'
+## 🚀 Ejecución local
+
+### Requisitos
+- Node.js v18 o superior
+- npm
+
+### Backend (Terminal 1)
+cd server
+npm install
+npm run dev
+
+### Frontend (Terminal 2)
+cd client
+npm install
+npm run dev
+
+## 📡 Endpoints de la API
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| GET | /api/tareas | Lista todas las tareas |
+| POST | /api/tareas | Crea una tarea nueva |
+| PUT | /api/tareas/:id | Marca/desmarca como completada |
+| DELETE | /api/tareas/:id | Elimina una tarea |
+
+## 👨‍💻 Autor
+
+Diego Ninancuro Cárcamo — 023100676k@uandina.edu.pe
+Curso: Plataformas para el Desarrollo de Aplicaciones — Semestre 2026-II
